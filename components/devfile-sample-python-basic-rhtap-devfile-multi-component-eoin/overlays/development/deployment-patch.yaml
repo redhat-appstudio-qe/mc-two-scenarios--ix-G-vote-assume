@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic-rhtap-devfile-multi-component-eoin
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/rhtap-demo-whof-tenant/mc-two-scenarios/devfile-sample-python-basic-rhtap-devfile-multi-component-eoin@sha256:5e78ebb5f409aa229b87bf0687a99a48aec545cf667181363f951283818ad322
+        name: my-python
+        resources: {}
+status: {}
